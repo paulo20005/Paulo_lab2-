@@ -45,5 +45,7 @@ class Circle:
          
         def is_unit_circle(self): #kollar om det är enhetscirkel
             return self.radius == 1 and self.x == 0 and self.y == 0
+            if self.radius <= 0:
+                raise ValueError("Radien kan inte vara mindre än 0")
 
         
