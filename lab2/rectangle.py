@@ -26,7 +26,7 @@ class Rectangle:
 
     #equal/lika med
     def __eq__(self, other):
-        if not isinstance(other, Rectangle): return False 
+        if not isinstance(other, Rectangle): return False #isinstance gör att rektangel kan bara jämföras med rektangel 
         return self.width == other.width and self.height == other.height
 
     #less than/mindre än
